@@ -1,0 +1,965 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-transform: capitalize;
+}
+*p{
+    font-size: 20px;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+body, p, a, button {
+  font-family: 'Lora', serif;
+}
+
+
+/* *************************header************************* */
+.main-header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(101, 101, 245, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header-list {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.main-header-list li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.main-header-list li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.main-header-list li a:hover:after {
+    width: 100%;
+    height: 3px;
+}
+
+.main-header-list li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.main-blog {
+    position: relative;
+}
+
+.blog-list {
+    position: absolute;
+    width: 180px;
+    background-color: rgba(101, 101, 245,0.5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    visibility: hidden;
+    left: 10px;
+    top:30px;
+}
+
+.main-blog:hover .blog-list {
+    visibility: visible;
+}
+
+.blog-list li a {
+    color: #fff;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.blog-list li {
+    display: block;
+    margin-left: 0;
+}
+
+.home-icon {
+    font-size: 25px;
+    padding-top:17PX;
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.home-input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-left: 30px;
+    border:none;
+    position: relative;
+}
+.header-search{
+    position: relative;
+    position: absolute;
+    display: inline-block;
+    width: 15%;
+}
+.search-icon {
+    position: absolute;
+    left: 2%;
+    top: 22px
+}
+
+/* ************************sec1********************************** */
+.container-sec1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/captivating-lavender-perfume-bottle-luxurious-still-life-dark-moodsetting-lighting-immerse-yourself-allure-bathed-soft-360132143.webp);
+    background-size: cover;
+}
+
+.sec1-content {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sec1-content h2 {
+    font-size: 77px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.sec1-content p {
+    font-size: 20px;
+    color: rgba(255, 255, 255,0.7);
+    margin-bottom: 15px;
+}
+
+.sec1-content button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.sec1-content .sec1-btn1 {
+    background-color: #fff;
+}
+
+.sec1-content .sec1-btn2 {
+    background-color:rgba(101, 101, 245) ;
+}
+
+.sec1-content .sec1-btn1:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.sec1-content .sec1-btn2:hover {
+    background-color: rgba(101, 101, 245,0.7);
+}
+
+/* ***********************sec2****************************** */
+.welcome-container {
+    width: 70%;
+    height: 50vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.welcome-card {
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(143, 143, 240);
+    border-radius: 10px;
+    padding: 15px 10px;
+    position: relative;
+    overflow: auto;
+}
+
+.welcome-card:hover.welcome-card h3{
+    color: #fff;
+}
+.welcom-center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.welcome-container h2 {
+    font-size: 40px;
+    margin-top: 130px;
+}
+
+.welcome-container hr {
+    width: 10%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: rgb(143, 143, 240);
+}
+
+.welcome-card h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.welcome-card p {
+    margin-bottom: 20px;
+}
+
+.welcome-card a {
+    text-decoration: none;
+    font-size: 18px;
+    color: blue;
+}
+
+.welcome-card:hover.welcome-card a{
+    color: #fff;
+}
+
+.welcom-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(143, 143, 240);
+}
+
+.welcome-card:hover .welcom-icon{
+    color: rgb(73, 68, 207);
+}
+
+.welcome-card:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.welcome-card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+/* *********************sec3**************************** */
+.featured-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 234, 248);
+    text-align: center;
+    position: relative;
+}
+
+.featured-container h2 {
+    font-size: 40px;
+    padding-top: 90px;
+}
+
+.featured-container hr {
+    width: 10%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: rgb(143, 143, 240);
+}
+
+.featured-cards {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+}
+
+.featured-card {
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-bottom: 50px;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+
+.featured-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.featured-center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.featured-overlay {
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.featured-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.featured-content h2 {
+    font-size: 30px;
+    padding: 15px;
+    color: #fff;
+}
+
+.featured-content p {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.featured-content a {
+    font-size: 25px;
+    color: #8a8d84ee;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.featured-card:hover .featured-overlay {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+/* ***************************sec4************************************ */
+.offer-container {
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.offer-card {
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin-bottom: 50px;
+    padding: 25px 10px 25px 40px;
+    border: 1px solid rgb(143, 143, 240);
+    border-radius: 10px;
+    position: relative;
+    overflow: auto;
+}
+
+.offer-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 17px;
+    color: #8a8d84ee;
+}
+
+.offer-center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.offer-container h2 {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.offer-container hr {
+    width: 10%;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: rgb(143, 143, 240);
+}
+
+.offer-icon {
+    position: absolute;
+    font-size: 30px;
+    left: 15px;
+    color: rgb(143, 143, 240);
+}
+
+.offer-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    background-color: rgb(202, 201, 240);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.offer-card:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.offer-card:hover h3,.offer-card:hover .offer-icon {
+    color: rgb(73, 68, 207);
+}
+
+.offer-card:hover p{
+    color: black;
+}
+
+/**************************************sec5******************************* */
+.why-container {
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.why-left {
+    float: left;
+    width: 70%;
+    padding: 25px 15px;
+}
+.why-left h2{
+    font-size: 40px;
+    margin-top: 50px;
+    padding: 5px;
+}
+.why-left hr{
+    width: 10%;
+    height: 5px;
+    background-color:rgb(143, 143, 240) ;
+    margin-bottom: 50px;
+}
+.why-first-p{
+    margin-bottom: 40px;
+    color: #8a8d84ee;
+}
+.why-p{
+padding: 20px 0;
+color: #8a8d84ee;
+}
+ .why-icon{
+    color: rgb(143, 143, 240);
+ }
+.why-right{
+    float: right;
+    width: 30%;
+}
+.why-right ul{
+    margin-right: 30px;
+    position: relative;
+}
+
+.why-right .bollet{
+    display: inline;
+    width: 15px;
+    height: 15px;
+    margin-left:5px ;
+    background-color: #8a8d84ee;
+    border-radius: 50%;
+    float: right;
+}
+.active{
+    background-color: rgba(101, 101, 245);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline;
+    float: right;
+}
+.why-right li:hover{
+    background-color: rgba(101, 101, 245);
+}
+.why-right img{
+    width: 100%;
+    height: 55vh;
+    border-radius: 10px;
+}
+/* ******************************sec6********************************* */
+.sec6-container{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/elegant-purple-perfume-bottle-with-lavender-photo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+.sec6-container::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.sec6-cards{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.sec6-card{
+    width: 25%;
+    float: left;
+    margin-top: 15%;
+    position: relative;
+    z-index: 1;
+}
+.sec6-icon{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:rgb(101, 101, 245) ;
+}
+.sec6-card h3{
+    font-size: 25px;
+    color: #fff;
+}
+.sec6-card p{
+    font-size: 18px;
+    color: #fff;
+}
+/* **********************************sec7************************************ */
+.price-cotainer{
+    width: 70%;
+    height: 75vh;
+    margin: auto;
+    text-align: center;
+}
+.price-cotainer-title {
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 100px;
+}
+.price-cotainer hr{
+    width: 10%;
+    height: 5px;
+    background-color: rgb(143, 143, 240);
+    margin: auto;
+    margin-bottom: 60px;
+}
+.price-card{
+    width: 30%;
+    border: 1px solid rgb(143, 143, 240);
+    border-radius: 10px;
+    float: left;
+    padding: 40px;
+    position: relative;
+}
+.price-card::after{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    background-color:rgb(202, 201, 240);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.price-card:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.price-card-center{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.price-card h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.price-card h2{
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+.price-card p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.taple-price{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+    border: 1px solid rgb(143, 143, 240) ;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.price-card:hover.price-card h3{
+    color: #fff;
+}
+
+.price-card:hover .taple-price{
+    border: 1px solid #fff;
+}
+.price-card button{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(143, 143, 240) ;
+    background-color: rgb(143, 143, 240);
+    color: #fff;
+    cursor: pointer;
+}
+.price-card button:hover{
+    color: rgb(143, 143, 240);
+    background-color: #fff;
+}
+.price-card:hover .taple-price h2{
+    color: rgb(143, 143, 240);
+}
+/* ************************sec8********************* */
+.creators-container{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/exquisite-lavender-purple-violet-floral-perfume-bottle-mockup-timeless-beauty-branding-design-concept-enhanced-stunning-351293477.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.creators-container::after{
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.creators-cards{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.creators-card{
+    width: 45%;
+    float: left;
+    position: relative;
+    overflow: auto;
+    margin-top: 11%;
+    padding-left: 30px;
+}
+.creator h2 {
+    font-size: 40px;
+    padding:25px 0 0 100px;
+    color: #fff;
+}
+.creator p{
+    padding-left: 100px;
+    font-size: 25px;
+    color: blue;
+}
+.creator-special{
+    margin-right: 10%;
+}
+.creator{
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.creator img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+.s{
+    padding: 10px;
+    line-height: 1.5;
+    color: #fff;
+}
+/* *********************************sec9******************************* */
+.ourteam-container{
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.ourteam-container h2{
+    font-size: 40px;
+    padding:70px 0 5px 0;
+    margin-top: 50px;
+}
+.ourteam-container hr{
+    width: 10%;
+    height: 5px;
+    background-color: rgb(143, 143, 240);
+    margin: auto;
+    margin-bottom: 60px;
+}
+.ourteam-caard{
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(143, 143, 240);
+    padding: 20px 0;
+    position: relative;
+    margin-bottom: 60px;
+}
+.ourteam-caard::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:rgba(143, 143, 240,0.4) ;
+    z-index: -1;
+}
+.ourteam-caard:hover:after{
+    height: 100%;
+    transition: 0.5s;
+}
+.ourteam-caard h3{
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.ourteam-caard p{
+    font-size: 18px;
+}
+.ourteam-center{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.ourteam-img{
+    width: 70%;
+    height:220px;
+    margin: auto;
+    position: relative;
+}
+.ourteam-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+ .ourteam-caard:hover .ourteam-img::after{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.5;
+}
+
+.ourteam-caard:hover.ourteam-caard h3{
+    color: #fff;
+}
+.ourteam-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.ourteam-icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+    width: 15%;
+    background-color: rgb(73, 68, 207);
+    z-index: 2;
+    visibility: hidden;
+}
+.ourteam-caard:hover .ourteam-icons{
+    visibility: visible;
+}
+.ourteam-icons a{
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    padding: 3px;
+    z-index: 2;
+}
+/* **************************************sec10************************************* */
+.news-container{
+    width: 70%;
+    height: 85vh;
+    margin: auto;
+    text-align: center;
+}
+.news-container h2{
+    font-size: 40px;
+    padding: 5px;
+}
+.news-container hr{
+    width: 10%;
+    height: 5px;
+    background-color:rgb(143, 143, 240) ;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.news-card{
+    width: 30%;
+    float: left;
+    padding: 20px 15px;
+    border: 1px solid rgb(143, 143, 240);
+    border-radius: 10px;
+    position: relative;
+}
+.news-card::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+    background-color:rgba(143, 143, 240,0) ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.news-card:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(143, 143, 240,0.4);
+}
+.news-card span{
+    font-size: 18px;
+    padding: 5px;
+}
+.news-card h3{
+    font-size: 20px;
+    padding: 15px 0;
+}
+.news-card:hover.news-card h3{
+    color: #fff;
+}
+.news-card.news-card:hover.news-card p{
+    color: blue;
+}
+.news-card p{
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+}
+.news-img{
+    width: 65%;
+    margin: auto;
+}
+.news-img img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.news-center{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.news-card-a{
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+.news-card:hover .news-card-a{
+    color: #fff;
+}
+.news-icon{
+    color: blue;
+}
+/* ********************************sec11***************************** */
+.fotter-container{
+    width: 100%;
+    background-color:rgb(143, 143, 240);
+}
+.fotter-card{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.fotter-card img{
+    width: 200px;
+    height:200px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.fotter-icons li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    padding-top: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: rgb(95, 95, 184);
+    transition: 0.2s;
+}
+.fotter-icons li:hover{
+    background-color:rgb(67, 67, 201) ;
+}
+.fotter-icons li a{
+    color: #fff;
+}
+.fotter-card p{
+    padding: 30px 0;
+    color: #fff;
+    font-size: 16px;
+}
